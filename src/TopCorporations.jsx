@@ -1,4 +1,7 @@
-import { gql, useQuery } from "@apollo/client";
+import {
+  gql,
+  useQuery
+} from "@apollo/client";
 
 import './TopCorporations.css'
 

@@ -2,10 +2,18 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './bootstrap.css'
 import './index.css'
-import { BrowserRouter, Routes, Route } from "react-router";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router";
 import Welcome from './Welcome.jsx'
 import UniverseAlliance from './UniverseAlliance.jsx';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider
+} from '@apollo/client';
 
 const client = new ApolloClient({
   uri: 'https://evemonk.com/graphql',
@@ -18,7 +26,7 @@ createRoot(document.getElementById('root')).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Welcome />} />
-          <Route path="/universe/alliances/1" element={<UniverseAlliance />} />
+          <Route path="/universe/alliances/:id" element={<UniverseAlliance />} />
         </Routes>
       </BrowserRouter>
     </ApolloProvider>
