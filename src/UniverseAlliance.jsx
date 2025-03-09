@@ -13,6 +13,7 @@ const GET_ALLIANCE_BY_ID = gql`
       id
       name
       ticker
+      charactersCount
       icon {
         large
       }
@@ -55,6 +56,10 @@ function UniverseAlliance() {
 
                 <li className={"list-group-item text-break"}>
                   Ticker: {data.alliance.ticker}
+                </li>
+
+                <li className={"list-group-item"}>
+                  Members: {data.alliance.charactersCount}
                 </li>
               </ul>
 
