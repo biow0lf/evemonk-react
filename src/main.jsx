@@ -9,6 +9,7 @@ import {
 } from "react-router";
 import Welcome from './Welcome.jsx'
 import UniverseAlliance from './UniverseAlliance.jsx';
+import Faq from "./Faq.jsx";
 import {
   ApolloClient,
   InMemoryCache,
@@ -28,6 +29,7 @@ createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/universe/alliances/:id" element={<UniverseAlliance />} />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
       </BrowserRouter>
     </ApolloProvider>
