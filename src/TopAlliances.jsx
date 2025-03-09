@@ -31,7 +31,7 @@ function TopAlliances() {
   return (
     <>
       <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"}>
-        <h4 className="text-center">Top alliances</h4>
+        <h4 className="text-center">Alliances</h4>
 
         <table className={"table table-dark table-striped table-bordered"}>
           <thead>
