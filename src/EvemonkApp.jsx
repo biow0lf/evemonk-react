@@ -8,8 +8,6 @@ function EvemonkApp() {
     <>
       <div className={"container"}>
         <div className={"row"}>
-          <h1>Aloha!</h1>
-
           <TopAlliances />
 
           <TopCorporations />
