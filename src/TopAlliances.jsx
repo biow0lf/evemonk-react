@@ -3,6 +3,8 @@ import {
   useQuery
 } from "@apollo/client";
 
+import { Link } from "react-router";
+
 import './TopAlliances.css';
 
 const GET_TOP_ALLIANCES = gql`
@@ -57,7 +59,9 @@ function TopAlliances() {
                        loading={"lazy"} />
                 </td>
                 <td className="text-break align-middle border-start-0">
-                  <a href={edge.node.id}>{edge.node.name}</a>
+                  <Link to={`/universe/alliances/${edge.node.id}`}>
+                    {edge.node.name}
+                  </Link>
                 </td>
                 <td className="text-end align-middle">
                   {edge.node.corporationsCount}
