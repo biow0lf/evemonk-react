@@ -1,9 +1,9 @@
+import './Welcome.css'
+
 import TopAlliances from "./TopAlliances.jsx";
 import TopCorporations from "./TopCorporations.jsx";
 
-import './App.css'
-
-function App() {
+function Welcome() {
   return (
     <>
       <div className={"container"}>
@@ -17,4 +17,4 @@ function App() {
   )
 }
 
-export default App
+export default Welcome
