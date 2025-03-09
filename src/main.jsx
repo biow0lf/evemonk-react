@@ -3,8 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './bootstrap.css'
 import './index.css'
 import App from './App.jsx'
-import EvemonkApp from "./EvemonkApp.jsx";
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
   uri: 'https://evemonk.com/graphql',
@@ -14,7 +13,7 @@ const client = new ApolloClient({
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ApolloProvider client={client}>
-      <EvemonkApp />
+      <App />
     </ApolloProvider>
   </StrictMode>,
 )
