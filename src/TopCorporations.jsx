@@ -47,9 +47,9 @@ function TopCorporations() {
                   <img src={edge.node.icon.small}
                        alt={edge.node.name}
                        className={"rounded border"}
-                      width={"34"}
-                      height={"34"}
-                      loading={"lazy"} />
+                       width={"34"}
+                       height={"34"}
+                       loading={"lazy"} />
                 </td>
                 <td className="text-break align-middle border-start-0">
                   <a href={edge.node.id}>{edge.node.name}</a>
