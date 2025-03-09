@@ -11,6 +11,9 @@ const GET_TOP_ALLIANCES = gql`
           name
           corporationsCount
           charactersCount
+          icon {
+            small
+          }
         }
       }
     }
@@ -43,7 +46,12 @@ function TopAlliances() {
             {data.alliances.edges.map((edge) => (
               <tr key={edge.node.id}>
                 <td className="text-center align-middle border-end-0 m-0 p-2">
-                  &nbsp;
+                  <img src={edge.node.icon.small}
+                       alt={edge.node.name}
+                       className={"rounded border"}
+                       width={"34"}
+                       height={"34"}
+                       loading={"lazy"} />
                 </td>
                 <td className="text-break align-middle border-start-0">
                   <a href={edge.node.id}>{edge.node.name}</a>
