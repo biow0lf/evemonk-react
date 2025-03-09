@@ -32,9 +32,12 @@ function UniverseAlliance() {
 
   return (
     <>
-      <div className="row">
+      <div className="row" key={data.alliance.id}>
         <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-          <h1>Universe Alliance</h1>
+          <h4 className="text-center text-break">Alliance: {data.alliance.name}</h4>
+
+
+
         </div>
 
       </div>
