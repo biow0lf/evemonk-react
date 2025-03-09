@@ -6,7 +6,6 @@ import EvemonkApp from "./EvemonkApp.jsx";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
     <EvemonkApp />
   </StrictMode>,
 )
