@@ -2,17 +2,18 @@ import './Welcome.css'
 
 import TopAlliances from "./TopAlliances.jsx";
 import TopCorporations from "./TopCorporations.jsx";
+import Layout from "./Layout.jsx";
 
 function Welcome() {
   return (
     <>
-      <div className={"container"}>
+      <Layout>
         <div className={"row"}>
           <TopAlliances />
 
           <TopCorporations />
         </div>
-      </div>
+      </Layout>
     </>
   )
 }
