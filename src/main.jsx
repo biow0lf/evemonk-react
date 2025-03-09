@@ -14,9 +14,10 @@ import {
   InMemoryCache,
   ApolloProvider
 } from '@apollo/client';
+import GRAPHQL_URL from './consts.js'
 
 const client = new ApolloClient({
-  uri: 'https://evemonk.com/graphql',
+  uri: GRAPHQL_URL,
   cache: new InMemoryCache(),
 });
 
