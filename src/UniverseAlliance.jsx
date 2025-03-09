@@ -12,6 +12,10 @@ const GET_ALLIANCE_BY_ID = gql`
     alliance(id: $id) {
       id
       name
+      ticker
+      icon {
+        large
+      }
     }
   }
 `;
@@ -32,14 +36,31 @@ function UniverseAlliance() {
 
   return (
     <>
-      <div className="row" key={data.alliance.id}>
-        <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-          <h4 className="text-center text-break">Alliance: {data.alliance.name}</h4>
+      <div className={"container"}>
+        <div className="row" key={data.alliance.id}>
+          <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <h4 className="text-center text-break">Alliance: {data.alliance.name}</h4>
 
+            <div className={"card"}>
+              <ul className={"list-group list-group-flush"}>
+                <li className={"list-group-item text-center"}>
+                  <img src={data.alliance.icon.large}
+                       alt={data.alliance.name}
+                       className={"rounded border"}
+                       width={"130"}
+                       height={"130"}
+                       loading={"lazy"}
+                  />
+                </li>
 
+                <li className={"list-group-item text-break"}>
+                  Ticker: {data.alliance.ticker}
+                </li>
+              </ul>
 
+            </div>
+          </div>
         </div>
-
       </div>
     </>
   )
