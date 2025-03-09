@@ -25,17 +25,22 @@ function TopAlliances() {
 
   return (
     <>
-      <h1>Top alliances</h1>
+      <div className={"col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6"}>
 
-      <table>
-        <tbody>
-          {data.alliances.edges.map((edge) => (
-            <tr key={edge.node.id}>
-              <td><a href={edge.node.id}>{edge.node.name}</a></td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+        <h1>Top alliances</h1>
+
+        <table className={"table table-dark table-striped table-bordered"}>
+          <tbody>
+            {data.alliances.edges.map((edge) => (
+              <tr key={edge.node.id}>
+                <td><a href={edge.node.id}>{edge.node.name}</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+      </div>
     </>
   )
 }

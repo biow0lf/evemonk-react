@@ -6,9 +6,15 @@ import './EvemonkApp.css'
 function EvemonkApp() {
   return (
     <>
-      <h1>Aloha!</h1>
-      <TopAlliances />
-      <TopCorporations />
+      <div className={"container"}>
+        <div className={"row"}>
+          <h1>Aloha!</h1>
+
+          <TopAlliances />
+
+          <TopCorporations />
+        </div>
+      </div>
     </>
   )
 }
