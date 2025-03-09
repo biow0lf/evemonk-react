@@ -20,6 +20,8 @@ import Welcome from './Welcome.jsx'
 import UniverseAlliance from './UniverseAlliance.jsx';
 import Faq from "./Faq.jsx";
 import PrivacyPolicy from "./PrivacyPolicy.jsx";
+import TermsOfService from "./TermsOfService.jsx";
+import About from "./About.jsx";
 
 import GRAPHQL_URL from './consts.js'
 
@@ -37,6 +39,8 @@ createRoot(document.getElementById('root')).render(
           <Route path="/universe/alliances/:id" element={<UniverseAlliance />} />
           <Route path="/faq" element={<Faq />} />
           <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+          <Route path="/terms_of_service" element={<TermsOfService />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </BrowserRouter>
     </ApolloProvider>
