@@ -18,6 +18,7 @@ const GET_TOP_ALLIANCES = gql`
           charactersCount
           icon {
             small
+            large
           }
         }
       }

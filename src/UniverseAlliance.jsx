@@ -6,6 +6,7 @@ import {
 } from "@apollo/client";
 
 import './UniverseAlliance.css'
+import Layout from "./Layout.jsx";
 
 const GET_ALLIANCE_BY_ID = gql`
   query getAllianceByID($id: ID!) {
@@ -15,6 +16,7 @@ const GET_ALLIANCE_BY_ID = gql`
       ticker
       charactersCount
       icon {
+        small
         large
       }
     }
@@ -37,7 +39,7 @@ function UniverseAlliance() {
 
   return (
     <>
-      <div className={"container"}>
+      <Layout>
         <div className="row" key={data.alliance.id}>
           <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <h4 className="text-center text-break">Alliance: {data.alliance.name}</h4>
@@ -66,7 +68,7 @@ function UniverseAlliance() {
             </div>
           </div>
         </div>
-      </div>
+      </Layout>
     </>
   )
 }
