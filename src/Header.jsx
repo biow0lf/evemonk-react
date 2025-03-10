@@ -1,4 +1,4 @@
-import './Header.css'
+import "./Header.css";
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
         <h2>Breadcrumbs</h2>
       </div>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

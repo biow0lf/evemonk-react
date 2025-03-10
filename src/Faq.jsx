@@ -1,14 +1,12 @@
-import './Faq.css'
+import "./Faq.css";
 import Layout from "./Layout.jsx";
 
 function Faq() {
   return (
     <>
-      <Layout>
-        FAQ
-      </Layout>
+      <Layout>FAQ</Layout>
     </>
-  )
+  );
 }
 
-export default Faq
+export default Faq;

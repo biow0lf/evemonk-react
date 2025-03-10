@@ -1,15 +1,13 @@
-import './About.css'
+import "./About.css";
 
 import Layout from "./Layout.jsx";
 
 function About() {
   return (
     <>
-      <Layout>
-        About
-      </Layout>
+      <Layout>About</Layout>
     </>
-  )
+  );
 }
 
-export default About
+export default About;

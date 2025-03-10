@@ -1,11 +1,8 @@
-import {
-  gql,
-  useQuery
-} from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
 
 import { Link } from "react-router";
 
-import './TopAlliances.css';
+import "./TopAlliances.css";
 
 const GET_TOP_ALLIANCES = gql`
   query getAlliances {
@@ -29,7 +26,7 @@ const GET_TOP_ALLIANCES = gql`
 function TopAlliances() {
   const { loading, error, data } = useQuery(GET_TOP_ALLIANCES);
 
-  if (loading) return 'Loading...';
+  if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
 
   console.log(data);
@@ -42,7 +39,9 @@ function TopAlliances() {
         <table className={"table table-dark table-striped table-bordered"}>
           <thead>
             <tr>
-              <th colSpan="2" className="text-center">Name</th>
+              <th colSpan="2" className="text-center">
+                Name
+              </th>
               <th className="text-end">Corps</th>
               <th className="text-end">Members</th>
             </tr>
@@ -52,12 +51,14 @@ function TopAlliances() {
             {data.alliances.edges.map((edge) => (
               <tr key={edge.node.id}>
                 <td className="text-center align-middle border-end-0 m-0 p-2">
-                  <img src={edge.node.icon.small}
-                       alt={edge.node.name}
-                       className={"rounded border"}
-                       width={"34"}
-                       height={"34"}
-                       loading={"lazy"} />
+                  <img
+                    src={edge.node.icon.small}
+                    alt={edge.node.name}
+                    className={"rounded border"}
+                    width={"34"}
+                    height={"34"}
+                    loading={"lazy"}
+                  />
                 </td>
                 <td className="text-break align-middle border-start-0">
                   <Link to={`/universe/alliances/${edge.node.id}`}>
@@ -74,10 +75,9 @@ function TopAlliances() {
             ))}
           </tbody>
         </table>
-
       </div>
     </>
-  )
+  );
 }
 
-export default TopAlliances
+export default TopAlliances;

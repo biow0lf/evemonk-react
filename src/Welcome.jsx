@@ -1,4 +1,4 @@
-import './Welcome.css'
+import "./Welcome.css";
 
 import TopAlliances from "./TopAlliances.jsx";
 import TopCorporations from "./TopCorporations.jsx";
@@ -15,7 +15,7 @@ function Welcome() {
         </div>
       </Layout>
     </>
-  )
+  );
 }
 
-export default Welcome
+export default Welcome;

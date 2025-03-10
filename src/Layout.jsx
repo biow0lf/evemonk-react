@@ -1,4 +1,4 @@
-import './Layout.css'
+import "./Layout.css";
 
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
@@ -6,15 +6,13 @@ import Footer from "./Footer.jsx";
 function Layout({ children }) {
   return (
     <>
-      <Header/>
+      <Header />
 
-      <div className={"container"}>
-        {children}
-      </div>
+      <div className={"container"}>{children}</div>
 
-      <Footer/>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

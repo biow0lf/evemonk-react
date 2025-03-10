@@ -1,15 +1,13 @@
-import './TermsOfService.css'
+import "./TermsOfService.css";
 
 import Layout from "./Layout.jsx";
 
 function TermsOfService() {
   return (
     <>
-      <Layout>
-        Terms Of Service
-      </Layout>
+      <Layout>Terms Of Service</Layout>
     </>
-  )
+  );
 }
 
-export default TermsOfService
+export default TermsOfService;

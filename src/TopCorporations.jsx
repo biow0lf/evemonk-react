@@ -1,9 +1,6 @@
-import {
-  gql,
-  useQuery
-} from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
 
-import './TopCorporations.css'
+import "./TopCorporations.css";
 
 const GET_TOP_CORPORATIONS = gql`
   query getCorporations {
@@ -25,7 +22,7 @@ const GET_TOP_CORPORATIONS = gql`
 function TopCorporations() {
   const { loading, error, data } = useQuery(GET_TOP_CORPORATIONS);
 
-  if (loading) return 'Loading...';
+  if (loading) return "Loading...";
   if (error) return `Error! ${error.message}`;
 
   console.log(data);
@@ -38,7 +35,9 @@ function TopCorporations() {
         <table className={"table table-dark table-striped table-bordered"}>
           <thead>
             <tr>
-              <th colSpan="2" className="text-center">Name</th>
+              <th colSpan="2" className="text-center">
+                Name
+              </th>
               <th className="text-end">Members</th>
             </tr>
           </thead>
@@ -47,12 +46,14 @@ function TopCorporations() {
             {data.corporations.edges.map((edge) => (
               <tr key={edge.node.id}>
                 <td className="text-center align-middle border-end-0 m-0 p-2">
-                  <img src={edge.node.icon.small}
-                       alt={edge.node.name}
-                       className={"rounded border"}
-                       width={"34"}
-                       height={"34"}
-                       loading={"lazy"} />
+                  <img
+                    src={edge.node.icon.small}
+                    alt={edge.node.name}
+                    className={"rounded border"}
+                    width={"34"}
+                    height={"34"}
+                    loading={"lazy"}
+                  />
                 </td>
                 <td className="text-break align-middle border-start-0">
                   <a href={edge.node.id}>{edge.node.name}</a>
@@ -66,7 +67,7 @@ function TopCorporations() {
         </table>
       </div>
     </>
-  )
+  );
 }
 
-export default TopCorporations
+export default TopCorporations;
