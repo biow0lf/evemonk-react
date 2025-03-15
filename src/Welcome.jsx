@@ -1,8 +1,6 @@
-import "./Welcome.css";
-
-import TopAlliances from "./TopAlliances.jsx";
-import TopCorporations from "./TopCorporations.jsx";
-import Layout from "./Layout.jsx";
+import TopAlliances from "./TopAlliances";
+import TopCorporations from "./TopCorporations";
+import Layout from "./Layout";
 
 function Welcome() {
   return (

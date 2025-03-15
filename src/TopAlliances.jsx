@@ -2,8 +2,6 @@ import { gql, useQuery } from "@apollo/client";
 
 import { Link } from "react-router";
 
-import "./TopAlliances.css";
-
 const GET_TOP_ALLIANCES = gql`
   query getAlliances {
     alliances(first: 15) {

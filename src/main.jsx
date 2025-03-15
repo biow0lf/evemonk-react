@@ -8,14 +8,14 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import "./bootstrap.css";
 import "./index.css";
 
-import Welcome from "./Welcome.jsx";
-import UniverseAlliance from "./UniverseAlliance.jsx";
-import Faq from "./Faq.jsx";
-import PrivacyPolicy from "./PrivacyPolicy.jsx";
-import TermsOfService from "./TermsOfService.jsx";
-import About from "./About.jsx";
+import Welcome from "./Welcome";
+import UniverseAlliance from "./UniverseAlliance";
+import Faq from "./Faq";
+import PrivacyPolicy from "./PrivacyPolicy";
+import TermsOfService from "./TermsOfService";
+import About from "./About";
 
-import GRAPHQL_URL from "./consts.js";
+import GRAPHQL_URL from "./consts";
 
 const client = new ApolloClient({
   uri: GRAPHQL_URL,

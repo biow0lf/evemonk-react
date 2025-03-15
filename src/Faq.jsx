@@ -1,5 +1,4 @@
-import "./Faq.css";
-import Layout from "./Layout.jsx";
+import Layout from "./Layout";
 
 function Faq() {
   return (

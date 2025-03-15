@@ -1,6 +1,4 @@
-import "./TermsOfService.css";
-
-import Layout from "./Layout.jsx";
+import Layout from "./Layout";
 
 function TermsOfService() {
   return (

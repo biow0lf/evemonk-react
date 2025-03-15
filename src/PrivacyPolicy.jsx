@@ -1,6 +1,4 @@
-import "./PrivacyPolicy.css";
-
-import Layout from "./Layout.jsx";
+import Layout from "./Layout";
 
 function PrivacyPolicy() {
   return (

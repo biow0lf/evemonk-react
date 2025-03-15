@@ -2,8 +2,7 @@ import { useParams } from "react-router";
 
 import { gql, useQuery } from "@apollo/client";
 
-import "./UniverseAlliance.css";
-import Layout from "./Layout.jsx";
+import Layout from "./Layout";
 
 const GET_ALLIANCE_BY_ID = gql`
   query getAllianceByID($id: ID!) {

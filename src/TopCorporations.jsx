@@ -1,7 +1,5 @@
 import { gql, useQuery } from "@apollo/client";
 
-import "./TopCorporations.css";
-
 const GET_TOP_CORPORATIONS = gql`
   query getCorporations {
     corporations(first: 15) {
