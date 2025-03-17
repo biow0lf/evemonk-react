@@ -15,9 +15,7 @@ const GET_CORPORATION_CHARACTERS_BY_ID = gql`
   }
 `;
 
-function UniverseCorporationCharacters() {
-  let id = 1000001;
-
+function UniverseCorporationCharacters({ id }) {
   console.log(id);
 
   const { loading, error, data } = useQuery(GET_CORPORATION_CHARACTERS_BY_ID, {
