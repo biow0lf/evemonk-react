@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 import { gql, useQuery } from "@apollo/client";
 
 const GET_CORPORATION_CHARACTERS_BY_ID = gql`
@@ -55,7 +57,9 @@ function UniverseCorporationCharacters({ id }) {
                   dsadsa
                 </td>
                 <td className="align-middle text-break border-start-0">
-                  {edge.node.name}
+                  <Link to={`/universe/characters/${edge.node.id}`}>
+                    {edge.node.name}
+                  </Link>
                 </td>
               </tr>
               ))}
