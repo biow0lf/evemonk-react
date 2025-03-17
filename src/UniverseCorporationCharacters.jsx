@@ -39,7 +39,28 @@ function UniverseCorporationCharacters({ id }) {
   return (
     <>
       <div className="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
-        Loaded
+        <h4 className="text-center">Members ()</h4>
+
+        <table className="table table-dark table-striped table-bordered">
+          <thead>
+            <tr>
+              <th colSpan="2" className="text-center">Name</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {data.corporation.characters.edges.map((edge) => (
+              <tr key={edge.node.id}>
+                <td className="align-middle text-center border-end-0 m-0 p-2">
+                  dsadsa
+                </td>
+                <td className="align-middle text-break border-start-0">
+                  {edge.node.name}
+                </td>
+              </tr>
+              ))}
+          </tbody>
+        </table>
       </div>
     </>
   )
