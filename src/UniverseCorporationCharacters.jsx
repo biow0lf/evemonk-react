@@ -22,14 +22,25 @@ function UniverseCorporationCharacters({ id }) {
     variables: { id },
   });
 
-  if (loading) return "Loading...";
+  if (loading) {
+    return (
+      <>
+        <div className="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+          <h4 className="text-center">Loading...</h4>
+        </div>
+      </>
+    )
+  }
+
   if (error) return `Error! ${error.message}`;
 
   console.log(data);
 
   return (
     <>
-      Loading!...
+      <div className="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        Loaded
+      </div>
     </>
   )
 }
