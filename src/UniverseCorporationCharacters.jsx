@@ -41,7 +41,7 @@ function UniverseCorporationCharacters({ id }) {
   return (
     <>
       <div className="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
-        <h4 className="text-center">Members ()</h4>
+        <h4 className="text-center">Members ({data.corporation.characters.edges.length})</h4>
 
         <table className="table table-dark table-striped table-bordered">
           <thead>
