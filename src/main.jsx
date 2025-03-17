@@ -11,6 +11,7 @@ import "./index.css";
 
 import Welcome from "./Welcome";
 import UniverseAlliance from "./UniverseAlliance";
+import UniverseCorporation from "./UniverseCorporation";
 import Faq from "./Faq";
 import PrivacyPolicy from "./PrivacyPolicy";
 import TermsOfService from "./TermsOfService";
@@ -32,6 +33,10 @@ createRoot(document.getElementById("root")).render(
           <Route
             path="/universe/alliances/:id"
             element={<UniverseAlliance />}
+          />
+          <Route
+            path="/universe/corporations/:id"
+            element={<UniverseCorporation />}
           />
           <Route path="/faq" element={<Faq />} />
           <Route path="/privacy_policy" element={<PrivacyPolicy />} />
