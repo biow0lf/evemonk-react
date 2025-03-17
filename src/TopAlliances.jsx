@@ -58,14 +58,17 @@ function TopAlliances() {
                     loading={"lazy"}
                   />
                 </td>
+
                 <td className="text-break align-middle border-start-0">
                   <Link to={`/universe/alliances/${edge.node.id}`}>
                     {edge.node.name}
                   </Link>
                 </td>
+
                 <td className="text-end align-middle">
                   {edge.node.corporationsCount}
                 </td>
+
                 <td className="text-end align-middle">
                   {edge.node.charactersCount}
                 </td>

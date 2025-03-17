@@ -1,5 +1,7 @@
 import { gql, useQuery } from "@apollo/client";
 
+import { Link } from "react-router";
+
 const GET_TOP_CORPORATIONS = gql`
   query getCorporations {
     corporations(first: 15) {
@@ -53,9 +55,13 @@ function TopCorporations() {
                     loading={"lazy"}
                   />
                 </td>
+
                 <td className="text-break align-middle border-start-0">
-                  <a href={edge.node.id}>{edge.node.name}</a>
+                  <Link to={`/universe/corporations/${edge.node.id}`}>
+                    {edge.node.name}
+                  </Link>
                 </td>
+
                 <td className="text-end align-middle">
                   {edge.node.memberCount}
                 </td>
