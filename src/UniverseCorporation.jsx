@@ -74,8 +74,12 @@ function UniverseCorporation() {
                 </small>
               </p>
             </div>
-
           </div>
+
+          <div className="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <h4 className="text-center">Loading...</h4>
+          </div>
+
         </div>
       </Layout>
     </>
