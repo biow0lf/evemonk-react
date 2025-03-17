@@ -3,6 +3,7 @@ import { useParams } from "react-router";
 import { gql, useQuery } from "@apollo/client";
 
 import Layout from "./Layout";
+import UniverseCorporationCharacters from "./UniverseCorporationCharacters.jsx";
 
 const GET_CORPORATION_BY_ID = gql`
   query getCorporationByID($id: ID!) {
@@ -80,6 +81,7 @@ function UniverseCorporation() {
             <h4 className="text-center">Loading...</h4>
           </div>
 
+          <UniverseCorporationCharacters id={data.corporation.id} />
         </div>
       </Layout>
     </>
