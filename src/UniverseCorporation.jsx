@@ -9,6 +9,12 @@ const GET_CORPORATION_BY_ID = gql`
     corporation(id: $id) {
       id
       name
+      ticker
+      memberCount
+      icon {
+        small
+        large
+      }
     }
   }
 `;
@@ -33,6 +39,42 @@ function UniverseCorporation() {
         <div className="row">
           <div className="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
             <h4 className="text-center text-break">Corporation: {data.corporation.name}</h4>
+
+            <div className="card">
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item text-center">
+                  <img
+                    src={data.corporation.icon.large}
+                    alt={data.corporation.name}
+                    className={"rounded border"}
+                    width={"130"}
+                    height={"130"}
+                    loading={"lazy"}
+                  />
+                </li>
+
+                <li className="list-group-item text-break">Alliance:</li>
+
+                <li className="list-group-item text-break">
+                  Ticker: {data.corporation.ticker}
+                </li>
+
+                <li className="list-group-item">
+                  Members: {data.corporation.memberCount}
+                </li>
+
+                <li className="list-group-item text-break">
+                  CEO: TODO
+                </li>
+              </ul>
+
+              <p className="card-text text-center">
+                <small className="text-muted">
+                  Last updated: TODO
+                </small>
+              </p>
+            </div>
+
           </div>
         </div>
       </Layout>

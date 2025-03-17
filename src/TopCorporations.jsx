@@ -12,6 +12,7 @@ const GET_TOP_CORPORATIONS = gql`
           memberCount
           icon {
             small
+            large
           }
         }
       }
