@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router";
 
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
-import "./bootstrap.css";
+import "./darkly.scss"
+
 import "./index.css";
 
 import Welcome from "./Welcome";
