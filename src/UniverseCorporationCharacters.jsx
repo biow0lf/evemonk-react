@@ -54,7 +54,7 @@ function UniverseCorporationCharacters({ id }) {
             {data.corporation.characters.edges.map((edge) => (
               <tr key={edge.node.id}>
                 <td className="align-middle text-center border-end-0 m-0 p-2">
-                  dsadsa
+                  icon
                 </td>
                 <td className="align-middle text-break border-start-0">
                   <Link to={`/universe/characters/${edge.node.id}`}>
