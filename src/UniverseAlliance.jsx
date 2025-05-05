@@ -11,10 +11,7 @@ const GET_ALLIANCE_BY_ID = gql`
       name
       ticker
       charactersCount
-      icon {
-        small
-        large
-      }
+      iconLarge
     }
   }
 `;
@@ -46,7 +43,7 @@ function UniverseAlliance() {
               <ul className={"list-group list-group-flush"}>
                 <li className={"list-group-item text-center"}>
                   <img
-                    src={data.alliance.icon.large}
+                    src={data.alliance.iconLarge}
                     alt={data.alliance.name}
                     className={"rounded border"}
                     width={"130"}

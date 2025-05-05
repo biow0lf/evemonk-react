@@ -12,10 +12,7 @@ const GET_CORPORATION_BY_ID = gql`
       name
       ticker
       memberCount
-      icon {
-        small
-        large
-      }
+      iconLarge
     }
   }
 `;
@@ -45,7 +42,7 @@ function UniverseCorporation() {
               <ul className="list-group list-group-flush">
                 <li className="list-group-item text-center">
                   <img
-                    src={data.corporation.icon.large}
+                    src={data.corporation.iconLarge}
                     alt={data.corporation.name}
                     className={"rounded border"}
                     width={"130"}
