@@ -10,10 +10,7 @@ const GET_TOP_CORPORATIONS = gql`
           id
           name
           memberCount
-          icon {
-            small
-            large
-          }
+          iconSmall
         }
       }
     }
@@ -48,7 +45,7 @@ function TopCorporations() {
               <tr key={edge.node.id}>
                 <td className="text-center align-middle border-end-0 m-0 p-2">
                   <img
-                    src={edge.node.icon.small}
+                    src={edge.node.iconSmall}
                     alt={edge.node.name}
                     className={"rounded border"}
                     width={"34"}
