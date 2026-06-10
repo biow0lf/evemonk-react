@@ -799,9 +799,9 @@ balanced-match@^1.0.0:
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
 baseline-browser-mapping@^2.10.12:
-  version "2.10.34"
-  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.10.34.tgz#dedb606362446777cfe328d30d4ee15056d06303"
-  integrity sha512-IMDedajPifLnHNY0X9n8hKxRTQ6/eTHwr5bDo04WnuqxyKw6LYtQywCuuqPZwhl3aBXMvQpJov42GLCwRRdQzw==
+  version "2.10.35"
+  resolved "https://registry.yarnpkg.com/baseline-browser-mapping/-/baseline-browser-mapping-2.10.35.tgz#f0f2232e0de2d2f82cc491bcf830b05ed05937c6"
+  integrity sha512-honAfLBde0HAFLdNyBEfuuENkF6zR+ozxqxa/2zJKHBe1qzLqyTSeRKpdPEHAP03rlDGyQOPnCSxnVpVqQo9Mg==
 
 bootstrap@^5.3.8:
   version "5.3.8"
@@ -911,9 +911,9 @@ detect-libc@^2.0.3:
   integrity sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==
 
 electron-to-chromium@^1.5.328:
-  version "1.5.368"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.368.tgz#8e8d4600c5f5f01e891f8f843b4a941afb640412"
-  integrity sha512-7RckJJK4uESJF9PxvfMWd3TGqIiieUTG4HxnKaKuIpGbcr+r2ZEB3g2gAhCP3Fqm42vJSzLfgab9eva/C4/XVw==
+  version "1.5.371"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.371.tgz#fa5684f2a514c57368823f9e75553f9a7c5ef0be"
+  integrity sha512-e9htk9mAYL6AzmkEhSvVVw7IWGSBJ/Bqdn2eRyRLrj1g6sncN4WbFt5qnILYoCktktr45pyjIrOiRvBThQ808w==
 
 esbuild@^0.25.0:
   version "0.25.12"
@@ -1141,9 +1141,9 @@ graphql-tag@^2.12.6:
     tslib "^2.1.0"
 
 graphql@^16.10.0:
-  version "16.14.1"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.14.1.tgz#e692888b5103480a71e48cd9c3ed1dd8b0c5af7f"
-  integrity sha512-cQOsSMS/IrDz82PVyRDvf/Q1F/bRbBVjJlh+xYOkI1qw2bWRvWGiWc+m2O0d6l4Bt1fyY+8kzJ8JFWGJqNeDBg==
+  version "16.14.2"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.14.2.tgz#83faf25869e3df727cc855161db5da85b0e5b2c0"
+  integrity sha512-Chq1s4CY7jmh8gO2qvLIJyfCDIN+EHLFW/9iShnp1z8FjBQMoodWP1kDC36VAMXXIvAjj4ARa7ntfAV2BrjsbA==
 
 has-flag@^4.0.0:
   version "4.0.0"
