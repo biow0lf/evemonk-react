@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 
-import { gql, useQuery } from "@apollo/client";
+import { gql } from "@apollo/client";
+import { useQuery } from "@apollo/client/react";
 
 import Layout from "./Layout";
 import UniverseCorporationCharacters from "./UniverseCorporationCharacters.jsx";

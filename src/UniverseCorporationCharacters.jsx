@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 
-import { gql, useQuery } from "@apollo/client";
+import { gql } from "@apollo/client";
+import { useQuery } from "@apollo/client/react";
 
 const GET_CORPORATION_CHARACTERS_BY_ID = gql`
   query getCorporationCharactersByID($id: ID!) {
