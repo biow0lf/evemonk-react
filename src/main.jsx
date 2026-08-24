@@ -3,7 +3,8 @@ import { createRoot } from "react-dom/client";
 
 import { BrowserRouter, Routes, Route } from "react-router";
 
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import { ApolloClient, HttpLink, InMemoryCache } from "@apollo/client";
+import { ApolloProvider } from "@apollo/client/react";
 
 import "./darkly.scss"
 
@@ -21,7 +22,7 @@ import About from "./About";
 import GRAPHQL_URL from "./consts";
 
 const client = new ApolloClient({
-  uri: GRAPHQL_URL,
+  link: new HttpLink({ uri: GRAPHQL_URL }),
   cache: new InMemoryCache(),
 });
 
