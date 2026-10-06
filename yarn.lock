@@ -3,9 +3,9 @@
 
 
 "@apollo/client@^4.2.12":
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-4.3.1.tgz#4c8831ce512457bc8374dfe8fee4d85bc7943f3a"
-  integrity sha512-MFHzUfHxS+A6AzH+cS4896jHuSTRw5ACUANijz1gyesWZDLsbgZ17oCb/KfRAOUuoUr8AzCaBE+xJPi7R7ZOCA==
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/@apollo/client/-/client-4.3.2.tgz#041703bf35227f92398c3549c271bb4fb1e2cb8f"
+  integrity sha512-ra6f8NhP4b5Wznw6VpRGOGF6Q6a8rORToQeIx5BMC5Rc7mRVZ9wCN+01ynIZPjmlGPNif2Lqt0LRD+futfNgIw==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
     "@wry/caches" "^1.0.0"
@@ -661,9 +661,9 @@ detect-libc@^2.0.3:
   integrity sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==
 
 electron-to-chromium@^1.5.439:
-  version "1.5.444"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.444.tgz#fe57da2e9820f748ebb497b99c7a0366bc25737c"
-  integrity sha512-5ss/uJfoDYDHT0lfJzT6FbcskIzROIOPf0BbbFkGcvDzoJU7i//9GDrwwIHQVmIsrAGiF3ihpADBRIsrEFt1rQ==
+  version "1.5.445"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.445.tgz#616516dc50eb37c1649cd26019521b8960efd0e8"
+  integrity sha512-iX7o1nF+qNb3Bv5mLYgqfgF9Znh9e/8MKXdmbb8Gv2Q47OKIzTwEPD1oda1HrgEwYatTLJj0wQjHvIFt8Db53Q==
 
 escalade@^3.2.0:
   version "3.2.0"
@@ -1301,9 +1301,9 @@ uri-js@^4.2.2:
     punycode "^2.1.0"
 
 vite@^8.2.2:
-  version "8.3.2"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-8.3.2.tgz#391d1e62761b343435b8e4b512e449a4f90670a3"
-  integrity sha512-SQr1x6W5vVSbROg7vsyXIaxK9b0G7zsT68acdWWRmnBUsgDieLCRG+Rep9WdZgcposvv/GSnr4GUUBqB3vXq6w==
+  version "8.3.3"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-8.3.3.tgz#12651726ab1cca0a9e1e649e3cb4dca5b6b006a9"
+  integrity sha512-cTAldKPImjg6c+gk48U19POPn3GCBzZwpdsN8ZMEEcbpes+6/wvfqUd0C2y3qYY4wsj8PwgFwrZ/1jBPVttMSg==
   dependencies:
     lightningcss "^1.33.0"
     picomatch "^4.0.7"
